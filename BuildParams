@@ -5,3 +5,6 @@ public_build = true
 # build_variables_repository_url set in TC project hierarchy
 buildscripts_shared_more_NAMEs="build_variables"
 
+AUTOBUILD_PLATFORM_OVERRIDE = common
+build_Darwin = false
+build_Cygwin = true
