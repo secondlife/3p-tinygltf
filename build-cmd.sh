@@ -25,7 +25,7 @@ top="$(pwd)"
 stage="$top/stage"
 
 # load autobuild provided shell functions and variables
-TINYGLTF_SOURCE_DIR="tinygltf-2.5.0"
+TINYGLTF_SOURCE_DIR="tinygltf"
 
 pushd "$TINYGLTF_SOURCE_DIR"
     mkdir -p "$stage/include/tinygltf"
@@ -35,6 +35,5 @@ pushd "$TINYGLTF_SOURCE_DIR"
     cp -a json.hpp "$stage/include/tinygltf"
     mkdir -p "$stage/LICENSES"
     cp -a LICENSE "$stage/LICENSES/tinygltf_license.txt"
-	echo "v2.5.0" > "$stage/include/tinygltf/tinygltf_version.txt"
 popd
 
